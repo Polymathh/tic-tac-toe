@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 80px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Increase font size for X and O */
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cell.x {
+    color: red; /* X mark color */
+  }
+  
+  .cell.o {
+    color: blue; /* O mark color */
+  }
+  
+  .winning-message {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .winning-message.show {
+    display: block;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: red;
+  }
+  
